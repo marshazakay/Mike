@@ -6,23 +6,59 @@
     <title>Mike</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            grid-template-areas:
+                "img1 img2 img3 img4 img5"
+                "img6 img7 text img8 img9"
+                "img10 img11 img12 img13 img14"
+                "img15 img16 img17 img18 img19";
+            grid-template-rows: auto;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px; /* Spacing between items */
             height: 100vh;
+            justify-items: center;
+            align-items: center;
             background-color: #ffcccb;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             animation: backgroundAnimation 5s infinite alternate;
+            text-align: center;
         }
 
         h1 {
+            grid-area: text; /* Center the text in the grid */
             color: black;
-            text-align: center;
             font-size: 70px;
             text-shadow: 2px 2px 4px #000;
             animation: bounce 0.5s infinite alternate;
         }
+
+        img {
+            width: 150px; /* Increased width for larger images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+
+        /* Assign each image to a specific grid area */
+        .img1 { grid-area: img1; }
+        .img2 { grid-area: img2; }
+        .img3 { grid-area: img3; }
+        .img4 { grid-area: img4; }
+        .img5 { grid-area: img5; }
+        .img6 { grid-area: img6; }
+        .img7 { grid-area: img7; }
+        .img8 { grid-area: img8; }
+        .img9 { grid-area: img9; }
+        .img10 { grid-area: img10; }
+        .img11 { grid-area: img11; }
+        .img12 { grid-area: img12; }
+        .img13 { grid-area: img13; }
+        .img14 { grid-area: img14; }
+        .img15 { grid-area: img15; }
+        .img16 { grid-area: img16; }
+        .img17 { grid-area: img17; }
+        .img18 { grid-area: img18; }
+        .img19 { grid-area: img19; }
 
         /* Animation for background color */
         @keyframes backgroundAnimation {
@@ -43,5 +79,25 @@
     kys<br><br>
     ~Mike
 </h1>
+<img class="img1" src="Mikepic1.JPG" alt="Mike Picture 1">
+<img class="img2" src="Mikepic2.JPG" alt="Mike Picture 2">
+<img class="img3" src="Mikepic20.jpeg" alt="Mike Picture 3">
+<img class="img4" src="Mikepic4.JPG" alt="Mike Picture 4">
+<img class="img5" src="Mikepic5.JPG" alt="Mike Picture 5">
+<img class="img6" src="Mikepic6.JPG" alt="Mike Picture 6">
+<img class="img7" src="Mikepic7.JPG" alt="Mike Picture 7">
+<img class="img8" src="Mikepic8.JPG" alt="Mike Picture 8">
+<img class="img9" src="Mikepic9.JPG" alt="Mike Picture 9">
+<img class="img10" src="Mikepic10.png" alt="Mike Picture 10">
+<img class="img11" src="Mikepic11.JPG" alt="Mike Picture 11">
+<img class="img12" src="Mikepic12.JPG" alt="Mike Picture 12">
+<img class="img13" src="Mikepic13.PNG" alt="Mike Picture 13">
+<img class="img14" src="Mikepic14.JPG" alt="Mike Picture 14">
+<img class="img15" src="Mikepic15.JPG" alt="Mike Picture 15">
+<img class="img16" src="Mikepic16.JPG" alt="Mike Picture 16">
+<img class="img17" src="Mikepic17.JPG" alt="Mike Picture 17">
+<img class="img18" src="Mikepic18.JPG" alt="Mike Picture 18">
+<img class="img19" src="Mikepic2.jpeg" alt="Mike Picture 19">
+
 </body>
 </html>
